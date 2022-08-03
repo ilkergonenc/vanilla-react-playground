@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
+
 import './App.css';
-import logo from './logo.svg';
-import Seo from './Seo';
+import Seo from './components/Seo';
+import logo from './assets/logo.svg';
 
 function App() {
   return (
