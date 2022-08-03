@@ -1,10 +1,14 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 
+import useStaticData from '../hooks/useStaticData';
+
 function Seo({ title, description = '', children }) {
+  const metaTitle = useStaticData('meta.title');
+
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{metaTitle}</title>
       <meta name="description" content={description} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
