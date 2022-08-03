@@ -1,29 +1,34 @@
 import * as React from 'react';
+import { HelmetProvider } from 'react-helmet-async';
 import logo from './logo.svg';
 import './App.css';
+import Seo from './Seo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HelmetProvider>
+      <Seo title="My Vanilla React App" description="My Vanilla React Application based on react-script & react-router." />
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Edit
+            {' '}
+            <code>src/App.js</code>
+            {' '}
+            and save to reload.
+          </p>
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+      </div>
+    </HelmetProvider>
   );
 }
 
