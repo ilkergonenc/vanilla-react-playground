@@ -16,6 +16,7 @@ In this playground;
   - tailwindcss
   - postcss
 
+This project was tested with [Cypress Guides: React](https://docs.cypress.io/guides/component-testing/quickstart-react).\
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
