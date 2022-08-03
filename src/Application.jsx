@@ -3,6 +3,7 @@ import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Seo from './components/Seo';
+import BaseLayout from './layouts/BaseLayout';
 import {
   Home,
   NotFound,
@@ -17,8 +18,10 @@ function Application() {
       />
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="*" element={<NotFound />} />
+          <Route element={<BaseLayout />}>
+            <Route index element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </HelmetProvider>
