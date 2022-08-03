@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint ./src --ext=js,jsx",
-    "lint-fix": "eslint ./src --ext=js,jsx --fix"
+    "lint-fix": "eslint ./src --ext=js,jsx --fix",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "cypress": "^10.4.0",
     "eslint": "^8.21.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.26.0",
